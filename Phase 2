@@ -1,0 +1,127 @@
+✅ Phase 2: Medium (Intermediate Python)
+
+List comprehensions
+Dictionaries
+File handling
+Exception handling
+Functions with args/kwargs
+OOP (Classes/Objects)
+Lambda functions
+Modules
+and more!
+
+
+1. What will this code output?
+squares = [x*x for x in range(5)]
+print(squares)
+Answer: [0, 1, 4, 9, 16]
+Explanation: This is a list comprehension to create a list of squares.
+
+2. How do you read a text file in Python?
+with open("data.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+3. What is the output?
+my_dict = {"a": 1, "b": 2}
+print(my_dict.get("c", 0))
+Answer: 0
+Explanation: .get() returns default value if key is not found.
+
+4. Write code to handle divide-by-zero exception.
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+5. How to define a function with default and variable arguments?
+def greet(name, msg="Hello"):
+    print(f"{msg}, {name}!")
+greet("Harsh")  # Output: Hello, Harsh!
+
+6. Write a lambda function to add two numbers.
+add = lambda x, y: x + y
+print(add(5, 3))  # Output: 8
+
+7. What is the output of this?
+x = [1, 2, 3]
+y = x
+y.append(4)
+print(x)
+Answer: [1, 2, 3, 4]
+Explanation: x and y refer to the same list object (shallow copy).
+
+8. Create a dictionary from 2 lists.
+keys = ["a", "b", "c"]
+values = [1, 2, 3]
+my_dict = dict(zip(keys, values))
+print(my_dict)
+
+9. What is *args and **kwargs in Python?
+Answer:
+*args = non-keyworded variable arguments (tuple)
+**kwargs = keyworded variable arguments (dict)
+Example:
+def show(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+10. How to sort a list of tuples by second value?
+data = [(1, 2), (3, 1), (5, 0)]
+data.sort(key=lambda x: x[1])
+print(data)  # Output: [(5, 0), (3, 1), (1, 2)]
+
+11. What is a class and object in Python?
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+p = Person("Harsh")
+print(p.name)
+Output: Harsh
+
+12. What is __init__ in a class?
+Answer: It's a constructor method that initializes an object.
+
+13. How to read a file line by line?
+with open("file.txt") as f:
+    for line in f:
+        print(line.strip())
+
+14. What is the difference between is and ==?
+== compares values
+is compares memory locations (identity)
+
+15. How to copy a list without affecting the original?
+a = [1, 2, 3]
+b = a.copy()
+b.append(4)
+print(a)  # Output: [1, 2, 3]
+
+16. What is the output?
+print(all([True, 1, "non-empty"]))
+Answer: True
+Explanation: All elements are truthy.
+
+17. How to import and use math module?
+import math
+print(math.sqrt(16))  # Output: 4.0
+
+18. What does this do?
+nums = [1, 2, 3, 4]
+print([x for x in nums if x % 2 == 0])
+Answer: [2, 4]
+Explanation: Filters even numbers using list comprehension.
+
+19. How to remove duplicates from a list?
+lst = [1, 2, 2, 3]
+unique = list(set(lst))
+print(unique)  # Output: [1, 2, 3] (unordered)
+
+20. How to check if a file exists before reading?
+import os
+if os.path.exists("file.txt"):
+    with open("file.txt") as f:
+        print(f.read())
+else:
+    print("File not found")
