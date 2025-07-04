@@ -1,0 +1,107 @@
+✅ Phase 1: Easy (Basic Python) — 20 Questions
+These questions cover variables, data types, operators, loops, conditionals, functions, lists, strings, etc.
+
+1. What is the output of the following?
+x = 5
+y = "5"
+print(x + int(y))
+Answer: 10
+Explanation: int(y) converts the string "5" to integer, so 5 + 5 = 10.
+
+2. Swap two variables in Python without a temporary variable.
+a = 10
+b = 20
+a, b = b, a
+print(a, b)
+Answer: 20 10
+Explanation: Python allows swapping using tuple unpacking.
+
+3. What does this return?
+len("Hello World")
+Answer: 11
+Explanation: len() counts characters, including spaces.
+
+4. What is the output?
+print(type([1, 2, 3]))
+Answer: <class 'list'>
+
+5. Print even numbers from 1 to 10 using a loop.
+for i in range(1, 11):
+    if i % 2 == 0:
+        print(i)
+
+6. How do you take input from user in Python?
+name = input("Enter your name: ")
+print("Hello", name)
+
+7. What is the output?
+print("Python"[-1])
+Answer: 'n'
+Explanation: Negative indexing gives the last character.
+
+8. Write a function to return square of a number.
+def square(n):
+    return n * n
+print(square(4))  # Output: 16
+
+9. What is a list in Python? Give an example.
+Answer: A list is an ordered, mutable collection of items.
+Example: my_list = [1, 2, "apple"]
+
+10. How do you add an element to a list?
+my_list = [1, 2]
+my_list.append(3)
+print(my_list)  # Output: [1, 2, 3]
+
+11. Write code to check if a number is positive, negative or zero.
+n = int(input())
+if n > 0:
+    print("Positive")
+elif n < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+12. How to reverse a string in Python?
+s = "hello"
+print(s[::-1])  # Output: 'olleh'
+
+13. What is the output?
+print(2 ** 3)
+Answer: 8
+Explanation: ** is the exponent operator.
+
+14. Write code to find factorial using loop.
+def factorial(n):
+    result = 1
+    for i in range(1, n+1):
+        result *= i
+    return result
+
+15. How to get a sublist from index 1 to 3?
+lst = [10, 20, 30, 40]
+print(lst[1:4])  # Output: [20, 30, 40]
+
+16. What is the output?
+x = None
+print(type(x))
+Answer: <class 'NoneType'>
+
+17. How to check type of a variable?
+a = 10
+print(type(a))  # Output: <class 'int'>
+18. Difference between = and ==?
+= is assignment
+== is comparison
+
+19. Write a Python program to check if a number is even.
+num = int(input())
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+20. What will this print?
+print("a" * 5)
+Answer: 'aaaaa'
+Explanation: String repetition using *
